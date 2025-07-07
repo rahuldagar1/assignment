@@ -158,28 +158,28 @@ export const InstrumentalData = () => {
 
           <Stack direction="row" spacing={2} justifyContent="center" mb={3} flexWrap="wrap">
             <Tooltip title="Sort: Commodities → Equities → Credit" arrow>
-              <Button variant="outlined" onClick={sortByAssetClass}>
+              <Button variant="outlined" onClick={sortByAssetClass} data-testid="sort-asset-class">
                 Sort by Asset Class
               </Button>
             </Tooltip>
             <Tooltip title="Sort: Price descending" arrow>
-              <Button variant="outlined" onClick={sortByPrice}>
+              <Button variant="outlined" onClick={sortByPrice} data-testid="sort-price">
                 Sort by Price
               </Button>
             </Tooltip>
             <Tooltip title="Sort: Ticker A → Z" arrow>
-              <Button variant="outlined" onClick={sortByTicker}>
+              <Button variant="outlined" onClick={sortByTicker} data-testid="sort-ticker">
                 Sort by Ticker
               </Button>
             </Tooltip>
             <Tooltip title="Reset sorting" arrow>
-              <Button variant="outlined" onClick={resetSort}>
+              <Button variant="outlined" onClick={resetSort} data-testid="reset-sorting">
                 Reset Sorting
               </Button>
             </Tooltip>
           </Stack>
 
-          <Box className="ag-theme-balham" sx={{ height: 600, width: "100%" }}>
+          <Box className="ag-theme-balham" sx={{ height: 600, width: "100%" }} data-testid="ag-grid-box">
             <AgGridReact<FinancialInstrument>
               rowData={rowData}
               columnDefs={columnDefs}
