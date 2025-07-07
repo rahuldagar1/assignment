@@ -153,7 +153,7 @@ export const InstrumentalData = () => {
       {/* Main Content */}
         <Paper elevation={3} sx={{ p: 4 }}>
           <Typography variant="h4" gutterBottom align="center">
-            Financial Instruments Table
+            Financial Instruments Data
           </Typography>
 
           <Stack direction="row" spacing={2} justifyContent="center" mb={3} flexWrap="wrap">
